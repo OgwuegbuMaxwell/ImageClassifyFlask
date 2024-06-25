@@ -1,0 +1,20 @@
+# Flask is the framework we are using tp create the Python project API
+Flask==3.0.3
+# We use Flask-RESTful for quickly building the 
+Flask-RESTful==0.3.10
+# bcrypt for securely hashing the password
+bcrypt==3.2.0
+# Python driver for mongoDB
+pymongo==4.7.3
+# numpy is a powerfull library for numerical operations. we use it 
+# to work with tensoflow and keras
+numpy
+# popular library for creating and training machine learning models
+tensorflow
+# Used for http interaction
+requests
+# keras is a high level interface for tensorflow
+# It simplifies the process of creating and training models
+keras
+# pillow for working with images
+pillow
