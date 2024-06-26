@@ -8,34 +8,6 @@
 The **ImageClassifyFlask** application is a Flask-based RESTful API that leverages machine learning to classify images using the InceptionV3 model pretrained on ImageNet. Users can register, authenticate, and use tokens to make requests for classifying images from provided URLs.
 
 
-### **Docker Setup**
-
-**Dockerfile for MongoDB:**
-
-**Using the latest MongoDB image**
-`FROM mongo:latest
-`
-
-**Dockerfile for Web Service:**
-
-**Use an official Python runtime as a parent image**
-`FROM python:3.8-slim
-`
-**Set the working directory in the container**
-`WORKDIR /usr/src/app
-`
-**Install Python dependencies**
-`COPY requirements.txt .`
-`RUN pip install --default-timeout=1200 --no-cache-dir -r requirements.txt`
-
-**Copy the application source code to the container**
-`COPY . .`
-
-**Command to run the application**
-`CMD ["python", "app.py"]`
-
-
-
 ### **Core Functionalities**
 
 **1. User Registration**
@@ -107,6 +79,8 @@ Use Postman or similar tools to test the API. Here are some sample requests and 
     "papillon": 0.79,
     "partridge": 0.13
 }
+
+
 
 
 
