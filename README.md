@@ -9,30 +9,31 @@ The **ImageClassifyFlask** application is a Flask-based RESTful API that leverag
 
 
 ### **Docker Setup**
+
 **Dockerfile for MongoDB:**
 
-**# Using the latest MongoDB image**
+**Using the latest MongoDB image**
 `FROM mongo:latest
 `
 
 **Dockerfile for Web Service:**
 
-
-# Use an official Python runtime as a parent image
+**Use an official Python runtime as a parent image**
 `FROM python:3.8-slim
 `
-# Set the working directory in the container
+**Set the working directory in the container**
 `WORKDIR /usr/src/app
 `
-# Install Python dependencies
+**Install Python dependencies**
 `COPY requirements.txt .`
 `RUN pip install --default-timeout=1200 --no-cache-dir -r requirements.txt`
 
-# Copy the application source code to the container
+**Copy the application source code to the container**
 `COPY . .`
 
-# Command to run the application
+**Command to run the application**
 `CMD ["python", "app.py"]`
+
 
 
 ### **Core Functionalities**
